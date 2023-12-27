@@ -46,7 +46,28 @@ async def create_assistant_file(assistant_id, file):
     )
     return(assistant_file)
 
+async def list_assistant_files(assistant_id, order, limit):
+    client = OpenAI()
+    assistant_files = await client.beta.assistants.files.list(
+    assistant_id=assistant_id,
+    order=order,
+    limit=limit,
+    )
+    return(assistant_files)
 
+async def retrieve_assistant_file(assistant_id, file_id):
+    client = OpenAI()
+    assistant_file = await client.beta.assistants.files.retrieve(
+    assistant_id=assistant_id,
+    file_id=file_id,
+    )
+    return(assistant_file)
 
-
+async def delete_assistant_file(assistant_id, file_id):
+    client = OpenAI()
+    deleted_assistant_file = await client.beta.assistants.files.delete(
+        assistant_id=assistant_id,
+        file_id=file_id
+    )
+    return(deleted_assistant_file)
 
