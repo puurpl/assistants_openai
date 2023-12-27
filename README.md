@@ -60,3 +60,9 @@ https://platform.openai.com/docs/api-reference/assistants
 **Misc**
 
 - Create Thread and Run
+
+
+### Embeddings Endpoint
+https://platform.openai.com/docs/api-reference/embeddings
+
+- Create Embedding
