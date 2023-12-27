@@ -1,5 +1,8 @@
 # OpenAI Assistants Framework
 
+A bare-bones framework to make integration with OpenAI assistant API quick and easy.
+This is a work in progress.
+
 ## Contains
 - Assistants API Integration
 - Embedding API Integration
